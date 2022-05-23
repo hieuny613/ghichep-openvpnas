@@ -3,6 +3,7 @@
 ## 1. Cấu hình card mạng trên ESXI trên cả 2 ESXI
 Trong **Networking** tạo 1 **Port Group**  
 Mục **Security** chọn **Accept** *Promiscuous mode, MAC address changes, Forged transmits*  
+![Tạo Port Group mới](images/create_port_group-esxi.png)
+## 2. Tạo VM chạy Alma Linux trên cả 2 ESXI
 
-![This is a alt text.](images/create_port_group-esxi.png)
-
+### 2.1 Cấu hình cơ bản trên 2 VM
