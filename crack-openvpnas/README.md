@@ -104,9 +104,9 @@ sudo service openvpnas restart
 ```
 
 **Kết quả**  
-![Tạo Port Group mới](images/openvpn-crack-1024.png)
+![Tạo Port Group mới](../images/openvpn-crack-1024.png)
 
 
-[Script crack OpenVPN ](https://github.com/hieuny613/ghichep-openvpnas/blob/main/script/crack-openvpnas.sh)
+## 3. [Script crack OpenVPN ](../script/crack-openvpnas.sh) ##
 
 
