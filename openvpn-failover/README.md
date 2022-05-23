@@ -50,10 +50,5 @@ ssh-copy-id root@192.168.70.1
 ```sh
 ssh root@192.168.70.2
 ```
-### 2.2 Cài đặt OpenVPN  ###
-Cài đặt OpenVPN Access Server trên cả 2 server  
-```sh
-dnf -y install https://as-repository.openvpn.net/as-repo-rhel8.rpm
-dnf -y install openvpn-as
-```
-## Crack OpenVPN Access Server ##
+### 2.2 Cài đặt OpenVPN và crack ###
+[Hướng dẫn cài đặt vằ crack OpenVPN](../crack-openvpnas/README.md)
