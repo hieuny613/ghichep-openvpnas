@@ -1,9 +1,9 @@
-# Ghi chép về cách cài đặt và crack OpenVPN Access Server trên VMWare ESXI
-**Hướng dẫn cài đặt**
+# Setting up high-availability failover mode
+
 ## 1. Cấu hình card mạng trên ESXI trên cả 2 ESXI
 Trong **Networking** tạo 1 **Port Group**  
 Mục **Security** chọn **Accept** *Promiscuous mode, MAC address changes, Forged transmits*  
-![Tạo Port Group mới](images/create_port_group-esxi.png)
+![Tạo Port Group mới](../images/create_port_group-esxi.png)
 ## 2. Tạo VM chạy Alma Linux trên cả 2 ESXI
 Tạo 2 máy ảo chạy trên 2 port group trên
 ### 2.1 Cài đặt môi trường trên cả 2 server
