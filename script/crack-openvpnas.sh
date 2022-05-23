@@ -1,3 +1,4 @@
+#!/bin/bash
 function echo_red() {
   echo -e "\033[1;31m$1\033[0m"
 }
