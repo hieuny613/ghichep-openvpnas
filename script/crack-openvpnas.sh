@@ -1,4 +1,8 @@
 #!/bin/bash
+### Crack OpenVPN Access Server
+### Version 1.0
+### hieuny
+
 function echo_red() {
   echo -e "\033[1;31m$1\033[0m"
 }
@@ -42,17 +46,20 @@ function check_root() {
     exit 1
   fi
 }
+
 function check_openvpnas() {
   if [[ ! -d /usr/local/openvpn_as ]]; then
     echo_red "Chưa cài đặt OpenVPN Access Server"
     exit 1
   fi
 }
+
 function install_soft {
   for i in unzip zip; do
      command -v $i &>/dev/null || dnf -q -y install $i > /dev/null
   done
 }
+
 function crack_openvpn() {
   echo_green "Bắt đầu crack OpenVPN Access Server"
   mkdir /tmp/crack-openvpn > /dev/null
@@ -89,10 +96,12 @@ EOF
   echo_green "Khởi động lại service"
   service openvpnas restart
 }
+
 function main(){
   check_root
   check_openvpnas
   install_soft
   crack_openvpn
 }
+
 main
