@@ -55,9 +55,15 @@ function check_openvpnas() {
 }
 
 function install_soft {
-  for i in unzip zip; do
+  echo_yellow "Cài đặt các gói cần thiết"
+  for i in vim curl wget net-tools telnet unzip zip; do
      command -v $i &>/dev/null || dnf -q -y install $i > /dev/null
   done
+}
+
+function install_openvpn() {
+  sudo dnf -y install https://as-repository.openvpn.net/as-repo-rhel8.rpm  > /dev/null
+  sudo dnf -y install openvpn-as  > /dev/null
 }
 
 function crack_openvpn() {
@@ -99,8 +105,8 @@ EOF
 
 function main(){
   check_root
-  check_openvpnas
   install_soft
+  check_openvpnas
   crack_openvpn
 }
 
