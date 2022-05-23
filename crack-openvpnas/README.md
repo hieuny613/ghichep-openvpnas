@@ -14,8 +14,8 @@ sudo firewall-cmd --reload
 - Cài đặt OpenVPN Access Server  
 
 ```sh
-dnf -y install https://as-repository.openvpn.net/as-repo-rhel8.rpm
-dnf -y install openvpn-as
+sudo dnf -y install https://as-repository.openvpn.net/as-repo-rhel8.rpm
+sudo dnf -y install openvpn-as
 ```
 Sau khi cài đặt xong sẽ có thông tin đăng nhập (user admin: openvpn và passwd random)  
 Không đăng nhập vào OpenVPN mà chuyển luôn sang crack
