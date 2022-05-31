@@ -61,11 +61,6 @@ function install_soft {
   done
 }
 
-function install_openvpn() {
-  sudo dnf -y install https://as-repository.openvpn.net/as-repo-rhel8.rpm  > /dev/null
-  sudo dnf -y install openvpn-as  > /dev/null
-}
-
 function crack_openvpn() {
   echo_green "Bắt đầu crack OpenVPN Access Server"
   mkdir /tmp/crack-openvpn > /dev/null
