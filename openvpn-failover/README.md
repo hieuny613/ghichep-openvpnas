@@ -51,4 +51,4 @@ ssh-copy-id root@192.168.70.1
 ssh root@192.168.70.2
 ```
 ### 2.2 Cài đặt OpenVPN và crack ###
-[Hướng dẫn cài đặt vằ crack OpenVPN](../crack-openvpnas/README.md)
+[Hướng dẫn cài đặt và crack OpenVPN](../crack-openvpnas/README.md)
