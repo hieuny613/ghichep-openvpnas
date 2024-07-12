@@ -65,6 +65,17 @@ function check_openvpnas() {
   fi
 }
 
+# Function to check OpenVPN Access Server version
+function check_version() {
+  local version
+  version=$(sacli Version | grep -oP '\d+\.\d+')
+
+  if (( $(echo "$version < 2.10" | bc -l) )); then
+    echo_red "Version $version is not supported. Please use version 2.10 or higher."
+    exit 1
+  fi
+}
+
 # Function to install software packages
 function install_soft() {
   local package=$1
@@ -138,6 +149,7 @@ EOF
 function main() {
   check_root
   check_openvpnas
+  check_version
   prepare_install
   crack_openvpn
 }
